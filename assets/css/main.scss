@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+html,body, #__nuxt, #__layout{
+    width: 100%!important;
+    height:100%!important;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+@import 'fonts', 'colors', 'standarts', 'components/header', 'components/mobilnavbar', 'components/slogan', 'components/hakkimizda', 'components/yedekParca', 'components/yedekParcaCard', 'components/galeri', 'components/iletisim', 'components/footer';

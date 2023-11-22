@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/node": "^18.17.1",
+    "nuxt": "^3.6.5",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2"
+  },
+  "dependencies": {
+    "@vueuse/motion": "^2.0.0",
+    "nuxt-swiper": "^1.2.0",
+    "vue-easy-lightbox": "^1.16.0",
+    "vue-lottie-player": "^0.1.9",
+    "vue3-carousel-nuxt": "^1.1.0",
+    "vue3-lottie": "^3.0.0"
+  }
+}

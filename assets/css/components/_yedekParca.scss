@@ -1,0 +1,29 @@
+#yedek-parcalar {
+    padding-top: 9rem;
+    margin-top: 25rem;
+    background-image: url("/images/yedekParcaArkaplan.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+
+        h1 {
+            color: white;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+// mobil
+@media screen and (max-width: 700px) {
+    #yedek-parcalar {
+        padding-top: 15rem !important;
+        margin-top: 5rem;
+    }
+}

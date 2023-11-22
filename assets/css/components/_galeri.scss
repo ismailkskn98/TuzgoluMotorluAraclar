@@ -1,0 +1,53 @@
+.galeri {
+    padding-top: 9rem;
+    margin-top: 10rem;
+    background: linear-gradient(to bottom left, $logo-main-color 50%, $logo-text-color 50%);
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .gallery {
+            min-width: 100%;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .pic {
+                max-width: 350px;
+                max-height: 225px;
+                margin: 2rem;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all .3s ease-in;
+                    transform: scale(1);
+
+                    &:hover {
+                        transform: scale(1.4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .galeri {
+        padding-top: 15rem !important;
+    }
+}

@@ -1,0 +1,83 @@
+#header {
+    z-index: 10000;
+    .container {
+        #mobil-navbar {
+            display: none;
+            position: relative;
+            i {
+                font-size: 3.5rem;
+                cursor: pointer;
+                color: $logo-text-color;
+            }
+            .navbar {
+                background-color: $navbar-color;
+                position: absolute;
+                left: -18rem;
+                top: -4.3rem;
+                height: 100vh;
+                min-width: 230px;
+                padding: 2rem;
+                transition: all .2s ease-in;
+                transform: translateX(240px);
+                i {
+                    margin-bottom: 2.5rem;
+                    color: $logo-text-color;
+                }
+                ul {
+                    li {
+                        a {
+                            display: inline-flex;
+                            width: 100%;
+                            height: 100%;
+                            font-size: 1.7rem;
+                            padding: 1.8rem 0;
+                            color: white;
+                            &:hover {
+                                color: $logo-text-color;
+                            }
+                            &:active {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+            .openNav {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+// mobil-navbar
+@media screen and (max-width: 1150px) {
+    #header {
+        .container {
+            padding: 0 3rem;
+            nav {
+                display: none;
+            }
+            #mobil-navbar {
+                display: block;
+            }
+        }
+    }
+}
+
+
+// mobil-whatsapp
+@media screen and (max-width: 700px) {
+    #header {
+        .container {
+            padding: 0 3rem;
+            .whatsapp {
+                display: none;
+            }
+        }
+    }
+    .mobil-whatsapp {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

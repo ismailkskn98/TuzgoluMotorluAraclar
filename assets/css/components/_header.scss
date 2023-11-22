@@ -1,0 +1,194 @@
+#header {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: $navbar-color;
+    transition: all .3s ease !important;
+
+    .container {
+        min-height: 12rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all .3s ease !important;
+
+        .logo {
+            img {
+                max-height: 10rem;
+                filter: drop-shadow(0 2px 30px black);
+                cursor: pointer;
+            }
+        }
+
+        .whatsapp {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s ease-in;
+            cursor: pointer;
+
+            .lottie {
+                width: 25px !important;
+                height: 25px !important;
+                margin: 0;
+                margin-right: 1rem;
+            }
+
+            .lottie,
+            a {
+                transition: all 0.2s ease-in;
+
+            }
+
+            a {
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: 1rem 2rem;
+                border-radius: 5px;
+                color: rgb(255, 255, 255);
+                border: 1px solid #168941;
+            }
+
+            &:hover {
+                background-color: #168941;
+                border-radius: 5px;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+
+        nav {
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    a {
+                        width: 100%;
+                        padding: 1rem 0;
+                        margin-left: 2.5rem;
+                        font-weight: 400;
+                        font-size: 1.7rem;
+                        transition: all .3s ease;
+                        color: rgb(255, 255, 255);
+
+                        &:hover {
+                            color: $logo-text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// header scroll start
+.sticky,
+.stickyC {
+    transition: all .3s ease !important;
+
+}
+
+.sticky {
+    background-color: white !important;
+}
+
+.stickyC {
+    min-height: 9rem !important;
+
+    .logo {
+        img {
+            max-height: 8rem !important;
+        }
+    }
+
+    .whatsapp {
+
+        i,
+        p {
+            font-size: 1.4rem !important;
+        }
+
+        a {
+            padding: .6rem 1.6rem !important;
+            color: #303c41 !important;
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: 1.4rem !important;
+                    color: #303c41 !important;
+
+                    &:hover {
+                        color: $logo-text-color !important;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// header scroll end
+
+
+
+// mobil-whatsapp
+.mobil-whatsapp {
+    display: none;
+    height: 5rem;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+    top: 12rem;
+    left: 0;
+
+    .lottie,
+    a {
+        transition: all 0.2s ease-in;
+
+    }
+
+    a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        border: 1px solid $whatsapp-color;
+        background-color: #168941;
+        transition: all 0.2s ease-in;
+        color: white;
+
+        .lottie {
+            width: 25px !important;
+            height: 25px !important;
+            margin: 0;
+            margin-right: 1rem;
+        }
+
+        &:hover {
+            background-color: #10632f;
+        }
+    }
+}
+
+.sticky-whatsapp {
+    top: 9rem;
+}

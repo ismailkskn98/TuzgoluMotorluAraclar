@@ -1,0 +1,103 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    .footer-whatsapp {
+        min-height: 6rem;
+        background-color: rgb(46, 46, 46);
+        color: white;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 8rem;
+            .footer-whatsapp-item {
+                a {
+                    display: inline-flex;
+                    padding: 1rem 2rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: $logo-text-color;
+                    color: #303c41;
+                    border-radius: 3px;
+                    transition: all .3s ease-in;
+                    i {
+                        margin-right: 1rem;
+                        font-size: 1.6rem;
+                        color: #07e76c;
+                    }
+                    &:hover {
+                        background-color: #c1581e;
+                    }
+                }
+            }
+            .footer-text {
+                i {
+                    margin-left: 1rem;
+                    color: $logo-text-color;
+                }
+            }
+        }
+    }
+    .copyright, .container, .copyright-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright {
+        min-height: 7rem;
+        background-color: rgb(36, 36, 36);
+        color: rgb(177, 177, 177);
+        .container {
+            p {
+                font-size: 1.3rem !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    height: 2.5rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px){
+    #footer {
+        .footer-whatsapp {
+            .container {
+                flex-direction: column;
+                margin: 2rem 0;
+                perspective: 1000px;
+                .footer-text {
+                    p {
+                        font-size: 1.4rem !important;
+                    }
+                    i {
+                        transform: rotate(90deg);
+                    }
+                }
+                .footer-whatsapp-item {
+                    a {
+                        font-size: 1.3rem !important;
+                    }
+                }
+            }
+        }
+        .copyright {
+            line-height: 3rem;
+            padding: 1rem;
+            .container {
+                p {
+                    img {
+                        height: 3rem;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
